@@ -1,3 +1,3 @@
-lsound: Opus Sound Manager
+lsound
 =====
 A sound management sample for Opus coding format.
