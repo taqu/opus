@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lcore\allocator\dlmalloc.h" />
+    <ClInclude Include="..\lcore\async\SyncObject.h" />
+    <ClInclude Include="..\lcore\async\Thread.h" />
+    <ClInclude Include="..\lcore\CLibrary.h" />
+    <ClInclude Include="..\lcore\LangSpec.h" />
+    <ClInclude Include="..\lcore\lcore.h" />
+    <ClInclude Include="..\lcore\liostream.h" />
+    <ClInclude Include="..\lcore\Vector.h" />
+    <ClInclude Include="..\lsound\Context.h" />
+    <ClInclude Include="..\lsound\dsp\dsp.h" />
+    <ClInclude Include="..\lsound\dsp\Resampler.h" />
+    <ClInclude Include="..\lsound\lsound.h" />
+    <ClInclude Include="..\lsound\lsound_api.h" />
+    <ClInclude Include="..\lsound\opus\Pack.h" />
+    <ClInclude Include="..\lsound\opus\PackReader.h" />
+    <ClInclude Include="..\lsound\opus\PackWriter.h" />
+    <ClInclude Include="..\lsound\opus\Resource.h" />
+    <ClInclude Include="..\lsound\opus\Stream.h" />
+    <ClInclude Include="..\lsound\Player.h" />
+    <ClInclude Include="..\lsound\UserPlayer.h" />
+    <ClInclude Include="..\lsound\Wasapi\Context.h" />
+    <ClInclude Include="..\lsound\Wasapi\Device.h" />
+    <ClInclude Include="..\lsound\Wasapi\Player.h" />
+    <ClInclude Include="..\lsound\Wasapi\UserPlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lcore\allocator\dlmalloc.c" />
+    <ClCompile Include="..\lcore\async\SyncObject.cpp" />
+    <ClCompile Include="..\lcore\async\Thread.cpp" />
+    <ClCompile Include="..\lcore\lcore.cpp" />
+    <ClCompile Include="..\lcore\liostream.cpp" />
+    <ClCompile Include="..\lsound\dsp\dsp.cpp" />
+    <ClCompile Include="..\lsound\dsp\Resampler.cpp" />
+    <ClCompile Include="..\lsound\opus\Pack.cpp" />
+    <ClCompile Include="..\lsound\opus\PackReader.cpp" />
+    <ClCompile Include="..\lsound\opus\PackWriter.cpp" />
+    <ClCompile Include="..\lsound\opus\Resource.cpp" />
+    <ClCompile Include="..\lsound\opus\Stream.cpp" />
+    <ClCompile Include="..\lsound\Wasapi\Context.cpp" />
+    <ClCompile Include="..\lsound\Wasapi\Device.cpp" />
+    <ClCompile Include="..\lsound\Wasapi\Player.cpp" />
+    <ClCompile Include="..\lsound\Wasapi\UserPlayer.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9429921-D3BA-411C-BC24-1AD2E45F9EF4}</ProjectGuid>
+    <RootNamespace>lsound</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60610.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\;$(ProjectDir)\ext\include\;$(ProjectDir)\ext\include\opus\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)ext\lib\;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_vc120_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\;$(ProjectDir)\ext\include\;$(ProjectDir)\ext\include\opus\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)ext\lib\;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_vc120</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;FLAC__NO_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_vc120_d.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libspeexdsp_d.lib;celt_d.lib;silk_common_d.lib;silk_float_d.lib;opus_d.lib;opusfile_d.lib;libogg_static_d.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).lib</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;FLAC__NO_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libspeexdsp.lib;celt.lib;silk_common.lib;silk_float.lib;opus.lib;opusfile.lib;libogg_static.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_vc120.lib</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7b96cf3a-aa55-41f1-be84-a5752a590e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Wasapi">
+      <UniqueIdentifier>{9f019465-2f44-4ce6-8275-29828eab8795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opus">
+      <UniqueIdentifier>{c4c80cb2-a312-43a5-bb70-503f37cef8df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenAL">
+      <UniqueIdentifier>{0a5acdab-9082-4c79-9959-a4756d370af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dsp">
+      <UniqueIdentifier>{077f3254-18b8-4ae2-9897-0769cfb2baa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenSL">
+      <UniqueIdentifier>{5043d16f-e0f1-4912-97a6-9687be930ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcore">
+      <UniqueIdentifier>{91c95db7-451a-4d8a-be56-6ce3ad6f91b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcore\async">
+      <UniqueIdentifier>{37aec9cc-cede-4c11-8b6d-43bb1eda8233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcore\allocator">
+      <UniqueIdentifier>{c78ee8cb-949e-4fcb-84ad-5daa2afc8fa2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lsound\dsp\dsp.h">
+      <Filter>src\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\dsp\Resampler.h">
+      <Filter>src\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\lsound.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Context.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\lsound_api.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\UserPlayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Wasapi\Context.h">
+      <Filter>src\Wasapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Wasapi\Device.h">
+      <Filter>src\Wasapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Wasapi\Player.h">
+      <Filter>src\Wasapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\Wasapi\UserPlayer.h">
+      <Filter>src\Wasapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\opus\Pack.h">
+      <Filter>src\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\opus\PackReader.h">
+      <Filter>src\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\opus\PackWriter.h">
+      <Filter>src\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\opus\Resource.h">
+      <Filter>src\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lsound\opus\Stream.h">
+      <Filter>src\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\LangSpec.h">
+      <Filter>lcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\CLibrary.h">
+      <Filter>lcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\lcore.h">
+      <Filter>lcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\liostream.h">
+      <Filter>lcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\async\SyncObject.h">
+      <Filter>lcore\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\async\Thread.h">
+      <Filter>lcore\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\Vector.h">
+      <Filter>lcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lcore\allocator\dlmalloc.h">
+      <Filter>lcore\allocator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lsound\dsp\dsp.cpp">
+      <Filter>src\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\dsp\Resampler.cpp">
+      <Filter>src\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\Wasapi\Device.cpp">
+      <Filter>src\Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\Wasapi\Context.cpp">
+      <Filter>src\Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\Wasapi\Player.cpp">
+      <Filter>src\Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\Wasapi\UserPlayer.cpp">
+      <Filter>src\Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\opus\Pack.cpp">
+      <Filter>src\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\opus\PackReader.cpp">
+      <Filter>src\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\opus\PackWriter.cpp">
+      <Filter>src\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\opus\Resource.cpp">
+      <Filter>src\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lsound\opus\Stream.cpp">
+      <Filter>src\opus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lcore\lcore.cpp">
+      <Filter>lcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lcore\liostream.cpp">
+      <Filter>lcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lcore\async\SyncObject.cpp">
+      <Filter>lcore\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lcore\async\Thread.cpp">
+      <Filter>lcore\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lcore\allocator\dlmalloc.c">
+      <Filter>lcore\allocator</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
